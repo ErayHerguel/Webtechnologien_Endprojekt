@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+      /* CSS for navigation bar */
+      #navbar {
+        background-color: #333;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      #navbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+  
+      /* CSS for right components */
+      #right-components {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+  
+      #component1, #component2, #component3, #component4 {
+        background-color: rgb(31, 30, 30);
+        padding: 10px;
+        margin-left: 10px;
+      }
+  
+      /* CSS for main content */
+      #main-content {
+        margin: 50px;
+      }
+
+      #headline {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: white;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="navbar">
+        <h1 id="headline">Eray</h1>
+      <div id="right-components">
+        <div id="component1"><a href="#">Tutorial</a></div>
+        <div id="component2"><a href="#">Tscheck_it</a></div>
+        <div id="component3"><a href="#">About</a></div>
+        <div id="component4"><a href="#">Content</a></div>
+      </div>
+    </header>
+    <div id="main-content">
+      <h1>Welcome to my website!</h1>
+      <p>This is the main content of the website.</p>
+    </div>
+  </body>
+  </html>
