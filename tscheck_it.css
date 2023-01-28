@@ -1,0 +1,114 @@
+body {
+    background-image: url(images/background.svg);
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS for navigation bar */
+#navbar {
+  background-color: #333;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* CSS for right components */
+#right-components {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#component2 {
+  background-color: rgb(19, 18, 18);
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px; /* add rounded corners */
+  margin-right: 10px;
+  box-shadow: 0px 0px 5px #ccc; /* add a subtle box shadow */
+}
+
+#component1,
+#component3,
+#component4 {
+  background-color: rgb(31, 30, 30);
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px; /* add rounded corners */
+  margin-right: 10px;
+}
+
+#component1:hover,
+#component3:hover,
+#component4:hover {
+  background-color: #666; /* change link text color on hover */
+}
+
+/* CSS for main content */
+#main-content {
+  margin: 50px;
+}
+
+#headline {
+  max-height: 80px;
+  width: auto;
+}
+details {
+  list-style-type: none; /* remove bullet points */
+  padding: 0; /* remove padding */
+  margin: 0; /* remove margin */
+}
+summary {
+  height: 40px; /* set a fixed height for the li elements */
+  display: flex; /* create a flex container for the li elements */
+  flex-wrap: wrap; /* allow the elements to wrap onto multiple rows */
+  margin: 10px 0; /* add 10px margin to the top and bottom of each list item */
+  padding: 10px; /* add 10px padding to each list item */
+  background-color: #cfcfcf; /* add a light gray background color */
+  border-radius: 5px; /* add rounded corners */
+  box-shadow: 0px 0px 5px #ccc; /* add a subtle box shadow */
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #000;
+}
+
+summary:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+span {
+    height: 30px; /* set a fixed height for the li elements */
+    display: flex; /* create a flex container for the li elements */
+    flex-wrap: wrap; /* allow the elements to wrap onto multiple rows */
+    margin: 10px 0; /* add 10px margin to the top and bottom of each list item */
+    padding: 10px; /* add 10px padding to each list item */
+    background-color: #cfcfcf; /* add a light gray background color */
+    border-radius: 5px; /* add rounded corners */
+    box-shadow: 0px 0px 5px #ccc; /* add a subtle box shadow */
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  span:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+a {
+  color: #000; /* make the link text black */
+  text-decoration: none; /* remove underline from link */
+}
+a:hover {
+  color: #fff; /* change link text color on hover */
+}
