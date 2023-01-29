@@ -70,7 +70,7 @@ summary {
   height: 40px; /* set a fixed height for the li elements */
   display: flex; /* create a flex container for the li elements */
   flex-wrap: wrap; /* allow the elements to wrap onto multiple rows */
-  margin: 10px 0; /* add 10px margin to the top and bottom of each list item */
+  margin-top: 20px; /* add 10px margin to the top and bottom of each list item */
   padding: 10px; /* add 10px padding to each list item */
   background-color: #cfcfcf; /* add a light gray background color */
   border-radius: 5px; /* add rounded corners */
@@ -96,7 +96,7 @@ span {
     box-shadow: 0px 0px 5px #ccc; /* add a subtle box shadow */
     margin-left: 60px;
     margin-right: 60px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     color: #000;
     justify-content: space-between; /* Distribute the items evenly in the container */
 
@@ -115,11 +115,49 @@ a:hover {
   color: #fff; /* change link text color on hover */
 }
 
-.left {
-  text-align: left; /* Align the text to the left */
+.menu-button {
+  background-color: transparent;
+  color: 	white;
+  box-shadow: none;
+  font-size: 40px;
+  display: none;
 }
 
-.right {
-  flex-basis: 80%; /* Take up 40% of the container */
-  text-align: left; /* Align the text to the right */
+#menu-toggle {
+  display: none;
 }
+
+#close {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #close {
+    display: block;
+  }
+
+  #right-components{ 
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: auto;
+    /* display: flex; */
+    flex-direction: column;
+    background-color: #666;
+}
+  .menu-button{
+    display: block;
+  }
+
+  .menu-item {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  #menu-toggle:checked ~#right-components{
+    display: flex;
+  }
+}
+
