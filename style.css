@@ -98,6 +98,8 @@ span {
     margin-right: 60px;
     margin-bottom: 20px;
     color: #000;
+    justify-content: space-between; /* Distribute the items evenly in the container */
+
   }
   
   span:hover {
@@ -111,4 +113,13 @@ a {
 }
 a:hover {
   color: #fff; /* change link text color on hover */
+}
+
+.left {
+  text-align: left; /* Align the text to the left */
+}
+
+.right {
+  flex-basis: 80%; /* Take up 40% of the container */
+  text-align: left; /* Align the text to the right */
 }
