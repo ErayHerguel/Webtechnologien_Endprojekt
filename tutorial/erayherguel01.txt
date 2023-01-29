@@ -1,0 +1,7 @@
+#name                                                                   // Eray Herg&uuml;l
+#email                                                                  // eray.herguel@hfg.design / eray.herguel@hfg-gmuend.de
+#woher                                                                  // Schorndorf (T&uuml;rkei)
+#was haben Sie vorher gemacht                                           // Berufskolleg f&uuml;r Wirtschaftsinformatik / 2 Sem. Wirtschaftsinformatik / 4 Sem. Wirtschaftsrecht
+#welche Vorerfahrung haben Sie in Programmierung etc.                   // Java, PHP, HTML, SQL
+#was k&ouml;nnen wir von Ihnen lernen                                        
+#Hobbys                                                                 // Basketball im Verein seit 11 Jahren / Auto fahren / Jugendtrainer seit 2 Jahren (Basketball) / Gaming

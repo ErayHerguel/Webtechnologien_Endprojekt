@@ -1,0 +1,4 @@
+﻿# Goto a search engine on the web
+# Find out what HTML is - Hypertext Markup Language ist eine Sprache mit der Webseiten geschrieben werden       Hypertext Markup Language is a language which is used to write websites.
+# Understand what “Markup Language” means - Es ist eine Sprache für die Gliederung und Formatierung von Texten und Daten welche von Maschinen gelesen werden kann       Language which can be read by mashines. It creates structure and formats of texts and data.
+# Find out what other Markup Languages exist (examples) - BBC, HTML, SGML, und XML      BBC, HTML, SGML, and XML.
