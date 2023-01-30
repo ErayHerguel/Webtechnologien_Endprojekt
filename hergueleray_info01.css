@@ -65,6 +65,26 @@ body {
     margin-right: 10px;
     box-shadow: 0px 0px 5px #ccc; /* add a subtle box shadow */
     margin: 50px;
+    width: auto;
+    max-height: 100%;
+}
+
+#img-box {
+  background-color: #333;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px; /* add rounded corners */
+  margin-right: 10px;
+  box-shadow: 0px 0px 5px #ccc; /* add a subtle box shadow */
+  margin: 50px;
+  max-width: 240px;
+  margin: auto;
+}
+
+#img {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
 }
 
 #headline {
@@ -169,3 +189,31 @@ a:hover {
   }
 }
 
+/* css for link */
+
+#link {
+  font-size: 10pt;
+}
+
+/* @media for changing the font sizes */
+
+@media (max-width: 300px) {
+  p{
+    font-size: xx-small;
+  }
+  span {
+    font-size:xx-small;
+  }
+  h3 {
+    font-size: small;
+  }
+  li {
+    font-size: xx-small;
+  }
+}
+
+@media (max-width: 500px) {
+  #link {
+    font-size: 6pt;
+  }
+}

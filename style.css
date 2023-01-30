@@ -33,7 +33,7 @@ body {
   margin-left: 10px;
   border-radius: 5px; /* add rounded corners */
   margin-right: 10px;
-  box-shadow: 0px 0px 5px #ccc; /* add a subtle box shadow */
+  box-shadow: 0px 0px 5px #ccc; /* add a subtle box shadow */ 
 }
 
 #component2,
@@ -161,3 +161,31 @@ a:hover {
   }
 }
 
+/* css for link */
+
+#link {
+  font-size: 10pt;
+}
+
+/* @media for changing the font sizes */
+
+@media (max-width: 300px) {
+  p{
+    font-size: xx-small;
+  }
+  span {
+    font-size:xx-small;
+  }
+  h3 {
+    font-size: small;
+  }
+  li {
+    font-size: xx-small;
+  }
+}
+
+@media (max-width: 500px) {
+  #link {
+    font-size: 6pt;
+  }
+}
