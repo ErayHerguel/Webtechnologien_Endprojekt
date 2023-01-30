@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="tscheck_it.css" />
   </head>
   <body>
-    <header id="navbar">
-      <img id="headline" src="images/Logo_Website.png" alt="Logo" />
-      <div id="right-components">
-        <div id="component1"><a href="index.html">Tutorial</a></div>
-        <div id="component2"><a href="#">Tscheck_it</a></div>
-        <div id="component3"><a href="#">About</a></div>
-        <div id="component4"><a href="#">Content</a></div>
-      </div>
-    </header>
+    <header id="navbar" class="top-nav">
+      <img id="headline" src="images/Logo_Website.png" alt="Logo">
+      <input id="menu-toggle" type="checkbox">
+          <label class="menu-button-container" for="menu-toggle">
+              <span class="menu-button">&#9776;</span>
+          </label>
+        <div id="right-components" class="menu">
+          <div id="component1" class="menu-item"><a href="index.html">Tutorial</a></div>
+          <div id="component2" class="menu-item"><a href="#">Tscheck_it</a></div>
+          <div id="component3" class="menu-item"><a href="about.html">About</a></div>
+          <div id="component4" class="menu-item"><a href="content.html">Content</a></div>
+          <label id="close" for="menu-toggle">&#9587;</label>
+      </header>
     <div id="main-content">
       <h1>tscheck-it questions</h1>
     </div>
@@ -24,80 +28,336 @@
     <details>
       <summary>
         <h3>
-          Question: How can you contribute to the team to have a great day?
+          Wolfgang: How can you contribute to the team to have a great day?
+        </h3>
+        <hr>
+        <h3>
+          11.10.22
         </h3>
       </summary>
       <span>
         <h4>
-          Antwort: Eine faire Arbeitsaufteilung beibehalten, um für ein gutes
+          Victor: Eine Optimistische Einstellung behalten, aus Fehlern lernt man.
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Eray: Eine faire Arbeitsaufteilung beibehalten, um für ein gutes
           Arbeitsklima zu sorgen.
         </h4>
       </span>
-    </details>
-    <details>
-      <summary>
-        <h3>Question: What experience did you gain today?</h3>
-      </summary>
       <span>
         <h4>
-          Antwort: Mit 90 statt 100 auf der Bundesstraße fahren spart einen
-          halbenLiter Sprit pro 100km ein
+          Ivo: Stimmung locker halten, auch wenn jemand mal n Fehler macht, nicht gleich aufregen oder beleidigt sein, sondern schauen, dass man das Problem evtl zusammen lösen kann
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Luca: Immer aktiv dabei sein, freundlich bleiben und gemeinsam Problemlösungen finden.
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Nils: Aufgaben koordinieren und einen Überblick behalten.
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Robert: Immer Hilfsbereit sein und auch auch gegenüber kritischen Meinungen offen sein und einen Mittelweg finde
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Fabian: gute Laune mitbringen und helfen wo man kann
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Felix: Wenn Probleme aufkommen, kann ich mit meinen Vorkenntnissen hoffentlich weiterhelfen.
         </h4>
       </span>
     </details>
     <details>
       <summary>
-        <h3>Question: Was ist Dein Lieblingstier?</h3>
+        <h3>Eray: What experience did you gain today?</h3>
+        <hr>
+        <h3>
+          18.10.2022
+        </h3>
       </summary>
       <span>
-        <h4>Antwort: Löwe</h4>
+        <h4>
+          Ivo: I learned to use Mouse coordinates on Javascript
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Arthur: Wie ich wenn-Funktionen in Javascript programmiere
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Victor: Das es einen Snack-Automaten im Schulgebäude gibt
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Felix: Ich habe heute gelernt, dass vorgemachte Lasagne im Kühlschrank im Ofen aufgewärmt richtig lecker schmeckt.        </h4>
+      </span>
+      <span>
+        <h4>
+          Robert: Habe meine JavaScript und C++ Kentnisse erweitert oder auch zum Teil erneuert
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Eray: Mit 90 statt 100 auf der Bundesstraße fahren spart einen halben Liter Sprit pro 100km ein
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Nils: dass ich aufhören sollte im Bahnhofsgebäude zu versuchen irgendwas herunterzuladen
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Fabian: Das man während einer Fahrt mit der Bahn nicht bei Videokonverenzen mitmachen kann.
+        </h4>
+      </span>
+    </details>
+    <details>
+      <summary>
+        <h3>Nils: Was ist Dein Lieblingstier?</h3>
+        <hr>
+        <h3>
+          25.10.2022
+        </h3>
+      </summary>
+      <span>
+        <h4>Felix: Delfin</h4>
+      </span>
+      <span>
+        <h4>Victor: Pinguin</h4>
+      </span>
+      <span>
+        <h4>Eray: Löwe</h4>
+      </span>
+      <span>
+        <h4>Ivo: Löwe</h4>
+      </span>
+      <span>
+        <h4>Arthur: Hund</h4>
+      </span>
+      <span>
+        <h4>Robert: Löwe</h4>
+      </span>
+      <span>
+        <h4>Fabian:	Elefant</h4>
+      </span>
+      <span>
+        <h4>Nils:	Delfin</h4>
       </span>
     </details>
     <details>
       <summary>
         <h3>
-          Question: Worüber habt ihr an der Hfg bis jetzt am meisten gelacht?
+          Fabian: Worüber habt ihr an der Hfg bis jetzt am meisten gelacht?
+        </h3>
+        <hr>
+        <h3>
+          08. 11. 2022
         </h3>
       </summary>
       <span>
-        <h4>Antwort: Nils beim Tischkicker</h4>
+        <h4>Fabian: Als Nils dem Verkäufer gesagt hat das er seine Geldkarte weggeworfen hat</h4>
+      </span>
+      <span>
+        <h4>Luca: Kunstfreiheit!</h4>
+      </span>
+      <span>
+        <h4>Felix: Als Nils mit seinem Mantel in der Nacht verwirrt durch die Stadt gerannt ist.</h4>
+      </span>
+      <span>
+        <h4>Arthur: Nils als Vampier</h4>
+      </span>
+      <span>
+        <h4>Nils: Where are you from? Ich bin aus Österreich</h4>
+      </span>
+      <span>
+        <h4>Robert: Trendfarbe #CFCFCF</h4>
+      </span>
+      <span>
+        <h4>Victor: Nils Körpersprache</h4>
+      </span>
+      <span>
+        <h4>Eray: Nils beim Tischkicker</h4>
+      </span>
+      <span>
+        <h4>Ivo: Das #CFCFCF meme</h4>
       </span>
     </details>
     <details>
       <summary>
-        <h3>Question: The first thing you would show an alien?</h3>
+        <h3>Robert: The first thing you would show an alien?</h3>
+        <hr>
+        <h3>
+          25.11.2022
+        </h3>
       </summary>
       <span>
-        <h4>Antwort: Movies about Aliens</h4>
+        <h4>Ivo: Music</h4>
+      </span>
+      <span>
+        <h4>Arthur: The World Wide Web</h4>
+      </span>
+      <span>
+        <h4>Eray: Movies about Aliens</h4>
+      </span>
+      <span>
+        <h4>Robert: McDonalds McDrive</h4>
+      </span>
+      <span>
+        <h4>Luca: Alien the movie</h4>
+      </span>
+      <span>
+        <h4>Felix: Unsere Natur</h4>
+      </span>
+      <span>
+        <h4>Victor: Pulp Fiction</h4>
+      </span>
+      <span>
+        <h4>Nils: Independence Day den Film</h4>
+      </span>
+      <span>
+        <h4>Fabian: Die Welt</h4>
       </span>
     </details>
     <details>
       <summary>
-        <h3>Question: Was ist eure liebste Erinnerung an der HfG bis jetzt?</h3>
+        <h3>Ivo: Was ist eure liebste Erinnerung an der HfG bis jetzt?</h3>
+        <hr>
+        <h3>
+          29.11.2022
+        </h3>
       </summary>
       <span>
         <h4>
-          Antwort: Die Aufnahme des Erstsemesterfilmes war sehr lustig wenn auch
-          stressig
+          Felix: Erster IOT Stammtisch am Lagerfeuer war ein sehr schoener Abend.
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Nils: Die Erleichterung nach der Party, das es endlich vorbei ist.
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Ivo: Der Comfort Check in/Bartour beim ersten Treffen mit dem Festkomitee und die Laborwoche (vor allem anfangs, gegen ende wars sehr stressig)
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Eray: Die Aufnahme des Erstsemesterfilmes war sehr lustig wenn auch stressig
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Arthur: (krank)
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Fabian: Die Vorbereitung bei der Ersti Party war sehr schoen aber auch sehr stressig.
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Robert: Erstsemesterfilm drehen, beziehungsweise zu machen, jedoch nur in der Woche vor der Party, waerenddessen und danach war es doch sehr stressig
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Victor: Kunstfreiheit Diskusion
+        </h4>
+      </span>
+      <span>
+        <h4>
+          Luca: Erstiparty
         </h4>
       </span>
     </details>
     <details>
       <summary>
         <h3>
-          Question: Was ist eure beste Erinnerung an die Erstsemester-Party?
+          Luca: Was ist eure beste Erinnerung an die Erstsemester-Party?
+        </h3>
+        <hr>
+        <h3>
+          06.12.2022
         </h3>
       </summary>
       <span>
-        <h4>Antwort: Die Reaktionen auf den Erstsemesterfilm</h4>
+        <h4>Luca: Die ersten Tage bei der Vorbereitung im Zapp</h4>
+      </span>
+      <span>
+        <h4>Felix: Als es vorbei war</h4>
+      </span>
+      <span>
+        <h4>Eray: Die Reaktionen auf den Erstsemesterfilm</h4>
+      </span>
+      <span>
+        <h4>Arthur: Als meine Schicht am Ende der Party vorbei war</h4>
+      </span>
+      <span>
+        <h4>Nils: Alles davor und alles danach</h4>
+      </span>
+      <span>
+        <h4>Robert: Als ich draußen war und kein techno mehr hören musste</h4>
+      </span>
+      <span>
+        <h4>Victor: Wodka Slush trinken</h4>
+      </span>
+      <span>
+        <h4>Ivo: Die Zusammenarbeit und das zusammen feiern mit den anderen Studiengängen :) auch wenns stressig war</h4>
+      </span>
+      <span>
+        <h4>Fabian: Das alles doch noch funktioiert hat obwohl es relativ stressig war an ende.</h4>
       </span>
     </details>
     <details>
       <summary>
-        <h3>Question: Was ist die letzte Serie die ihr geguckt habt?</h3>
+        <h3>Victor: Was ist die letzte Serie die ihr geguckt habt?</h3>
+        <hr>
+        <h3>
+          13.12.2022
+        </h3>
       </summary>
       <span>
-        <h4>Antwort: Peaky bildners</h4>
+        <h4>Ivo: Vinland Saga</h4>
+      </span>
+      <span>
+        <h4>Arthur: Modern Family</h4>
+      </span>
+      <span>
+        <h4>Eray: Peaky bildners</h4>
+      </span>
+      <span>
+        <h4>Robert: -</h4>
+      </span>
+      <span>
+        <h4>Luca: -</h4>
+      </span>
+      <span>
+        <h4>Felix: SWAT</h4>
+      </span>
+      <span>
+        <h4>Victor: Friends</h4>
+      </span>
+      <span>
+        <h4>Nils: Wednesday</h4>
+      </span>
+      <span>
+        <h4>Fabian: Wednesday</h4>
       </span>
     </details>
   </body>

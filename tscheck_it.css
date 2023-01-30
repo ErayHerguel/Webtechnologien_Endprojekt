@@ -67,7 +67,7 @@ details {
   margin: 0; /* remove margin */
 }
 summary {
-  height: 40px; /* set a fixed height for the li elements */
+  height: auto; /* set a fixed height for the li elements */
   display: flex; /* create a flex container for the li elements */
   flex-wrap: wrap; /* allow the elements to wrap onto multiple rows */
   margin: 10px 0; /* add 10px margin to the top and bottom of each list item */
@@ -86,7 +86,7 @@ summary:hover {
 }
 
 span {
-    height: 30px; /* set a fixed height for the li elements */
+    height: auto; /* set a fixed height for the li elements */
     display: flex; /* create a flex container for the li elements */
     flex-wrap: wrap; /* allow the elements to wrap onto multiple rows */
     margin: 10px 0; /* add 10px margin to the top and bottom of each list item */
@@ -112,3 +112,50 @@ a {
 a:hover {
   color: #fff; /* change link text color on hover */
 }
+
+.menu-button {
+  background-color: transparent;
+  color: 	white;
+  box-shadow: none;
+  font-size: 40px;
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #close {
+    display: block;
+  }
+
+  #right-components{ 
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: auto;
+    /* display: flex; */
+    flex-direction: column;
+    background-color: #666;
+}
+  .menu-button{
+    display: block;
+  }
+
+  .menu-item {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  #menu-toggle:checked ~#right-components{
+    display: flex;
+  }
+}
+

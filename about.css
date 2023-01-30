@@ -27,7 +27,7 @@ body {
   align-items: center;
 }
 
-#component1 {
+#component3 {
   background-color: rgb(19, 18, 18);
   padding: 10px;
   margin-left: 10px;
@@ -36,8 +36,8 @@ body {
   box-shadow: 0px 0px 5px #ccc; /* add a subtle box shadow */
 }
 
+#component1,
 #component2,
-#component3,
 #component4 {
   background-color: rgb(31, 30, 30);
   padding: 10px;
@@ -46,8 +46,8 @@ body {
   margin-right: 10px;
 }
 
+#component1:hover,
 #component2:hover,
-#component3:hover,
 #component4:hover {
   background-color: #666; /* change link text color on hover */
 }
@@ -55,6 +55,16 @@ body {
 /* CSS for main content */
 #main-content {
   margin: 50px;
+}
+
+#text-content {
+    background-color: #333;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px; /* add rounded corners */
+    margin-right: 10px;
+    box-shadow: 0px 0px 5px #ccc; /* add a subtle box shadow */
+    margin: 50px;
 }
 
 #headline {
@@ -70,7 +80,7 @@ summary {
   height: auto; /* set a fixed height for the li elements */
   display: flex; /* create a flex container for the li elements */
   flex-wrap: wrap; /* allow the elements to wrap onto multiple rows */
-  margin-top: 20px; /* add 10px margin to the top and bottom of each list item */
+  margin: 10px 0; /* add 10px margin to the top and bottom of each list item */
   padding: 10px; /* add 10px padding to each list item */
   background-color: #cfcfcf; /* add a light gray background color */
   border-radius: 5px; /* add rounded corners */
@@ -96,10 +106,8 @@ span {
     box-shadow: 0px 0px 5px #ccc; /* add a subtle box shadow */
     margin-left: 60px;
     margin-right: 60px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     color: #000;
-    justify-content: space-between; /* Distribute the items evenly in the container */
-
   }
   
   span:hover {
