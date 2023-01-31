@@ -1,0 +1,19 @@
+foo
+{
+    color: red;
+}
+
+foo > *
+{
+    color:green;
+}
+
+foo > bar:last-child
+{
+    color: grey;
+}
+
+foo + p
+{
+    background-color: yellow;
+}

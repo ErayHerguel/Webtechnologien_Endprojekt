@@ -1,0 +1,27 @@
+header 
+{
+    background-color: grey;
+    height: 100px;
+}
+
+h1 
+{
+    text-align: center;
+    line-height: 100px;
+    margin: 0;
+}
+
+article 
+{
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+    flex: 400px;
+}
+
+div 
+{
+    display: flex;
+    border: 1px solid red;
+    flex-wrap: wrap;
+}

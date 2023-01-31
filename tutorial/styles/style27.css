@@ -1,0 +1,11 @@
+
+/* units and sizes in css */
+h3 {
+    color: darkred;
+    background-color: rgb(111,111,111,0.5); /* opacity 50% */
+    font-weight: 100; /* very thin */
+    font-size: 1.2rem; 
+    padding: 6em; /* space around an element's content / internal space */
+    margin: 50px; /* space around an element outside of any defined borders / external space */
+    height: 30vh;
+  }

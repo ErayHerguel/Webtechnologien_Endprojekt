@@ -1,0 +1,49 @@
+.italic
+{
+    font-style: italic;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.size
+{
+    font-size: 32px;
+}
+
+.helvetica
+{
+    font-family: Helvetica;
+}
+
+.ibm
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.underline
+{
+    text-decoration: underline;
+}
+
+.overline
+{
+    text-decoration: overline;
+}
+
+.shadow
+{
+    text-shadow: aquamarine;
+}
+
+.decorarion-color
+{
+    text-decoration-color: crimson;
+}
+
+.line-through
+{
+    text-decoration: line-through;
+}

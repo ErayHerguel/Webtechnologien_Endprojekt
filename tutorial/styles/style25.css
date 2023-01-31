@@ -1,0 +1,13 @@
+p
+{
+    color: red;
+    border: 1px dotted blue;
+}
+div
+{
+    font-size: 20px;
+    color: white;
+    width: 500px;
+    border: 1px dotted white;
+    background-color: black;
+}

@@ -1,0 +1,173 @@
+/* wss style cred: https://codepen.io/alvarotrigo/pen/MWEJEWG */
+html, body 
+{
+    background-color: #ACACAC;
+    margin: 0;
+}
+
+/* avoid overlapping of hamburger menu and home link */
+body
+{
+    min-width: 100px;
+}
+
+* 
+{
+    font-family: monospace;
+    /* set border-box mode to account 
+    for any border and padding in the 
+    values of the box*/
+    box-sizing: border-box;
+}
+
+/* top navigation container with all navigation elements */
+.top-nav
+{
+    display: flex; /* set flex container to arrange links inside of the top navigations */
+    justify-content: space-between; /*align menu  link items to the right */
+    background-color: #9ad5b2; /*solid green*/
+    height: 50px; /*set height for the navigation container*/
+    padding: 1em; /*set distance from items to navigation container border*/
+    border: 1px solid red; /*for demonstration reasons olny*/
+}
+
+.menu
+{
+    display: flex; /* set menu and its link items to flex */
+    flex-direction: row; /* set flex direction to a row */
+    /* control distance for menu link items */
+    flex-wrap: nowrap; /* avoid line wrapping of flex items */
+    white-space: nowrap; /* avoid word wrapping of link texts */
+    margin: 0;
+    padding: 0;
+}
+
+/* for those div which are descentants of .menu */
+.menu > div
+{
+    margin: 0 1rem; /* control space btw the menu link items */
+    overflow: hidden; /* in case an item overflows - hide it */
+}
+
+/* hamburger menu setup */
+.menu-button-container
+{
+    /* display: none; hide button as long at is not needed */
+    height: 100%;
+    width: 30px;
+    cursor: pointer; /* transforms the cursor to a hand */
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted black; /* for demo reasons only */
+}
+
+/* style the hamburger menu */
+/* create the middle stripe of the hamburger */
+.menu-button,
+.menu-button::before,
+.menu-button::after
+{
+    display: block;  /* ensure to set hamburger tripes to block */
+    background-color: #fff; /* color of hamburger stripes by setting the background */
+    position: absolute; /* set the position of the tripe */
+    height: 4px; /* height of stripe */
+    width: 30px;
+    /* set transformation parameters e. g. time */
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+/* create the switch function for the hamburger menu and hide it if it is not needed*/
+#menu-toggle
+{
+    display: none; /* hide the menu toggle radio button */
+}
+
+/* set upper stripe */
+.menu-button::before
+{
+    content: ''; /*define hamburger menu button */
+    margin-top: -8px; /* set position */
+}
+
+/* set bottom stripe */
+.menu-button::after
+{
+    content: '';
+    margin-top: 8px;
+}
+
+/* menu +++ toggle transformation */
+#menu-toggle:checked + .menu-button-container .menu-button::before
+{
+    margin-top: 0px;
+    transform: rotate(405deg); /* set the transformation form for button after click */
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button
+{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after
+{
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+/* set media query for screens <600px to make the hamburger visible if browser width <600px */
+/* test it by narrowing your browser window or use the dev tool */
+@media (max-width: 600px)
+{
+    .menu-button-container
+    {
+        /* set hamburger menu container */
+        display: flex;
+        border: 2px dotted blue; /* for demo reasons olny */
+    }
+}
+
+.menu
+{
+    position: absolute;
+    /* set distance to top to 50px - which is the height of the top-nav */
+    top: 50px;
+    left: 0; /* set margin left on 0px */
+    flex-direction: column; /*set colum for flex oder */
+    width: 100%; /* set total width of menu items in hamburger menu */
+}
+
+/* make sure to let the menu links disappear */
+#menu-toggle ~ .menu div
+{
+    height: 0; /*set menu links to 0 height to disappear */
+    margin: 0;
+    padding: 0;
+    border: 0; /* set border to 0 to let the links disappear */
+    /* border: 1px solid yellow; */ /* for demo reasons only */
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* general siblings combinator ~ means that the second selector doe NOT have to immediately follow the first one
+means it will select all elements that is preceded by the former selector  */
+/* when clicking the hamburger menu - show the link items */
+#menu-toggle:checked ~ .menu div
+{
+    border: 1px dotted #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* format the menu link items */
+.menu > div
+{
+    display: flex; /* set container to flex */
+    justify-content: center; /* center link texts */
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    opacity: 70%; /* set menu transparent for demo reasons only */
+}
+/* end of @media container */

@@ -1,0 +1,25 @@
+.container 
+{
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: -10px;
+    margin-left: -50px;
+}
+
+.item 
+{
+    background-color: darkblue;
+    width: 100px;
+    height: 50px;
+    color: white;
+    list-style: none;
+    border-right: 1px solid black;
+    line-height: 50px;
+    text-align: center;
+}
+
+.item:first-child 
+{
+    background-color: #cfcfcf;
+}
